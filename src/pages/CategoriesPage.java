@@ -5,6 +5,7 @@ import framework.Page;
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
 public class CategoriesPage extends Page {
 
@@ -155,4 +156,5 @@ public class CategoriesPage extends Page {
         enableBtn(lastRow);
         confirmEnable();
     }
+    
 }

@@ -17,7 +17,7 @@ public class DashboardPage extends Page {
     }
 
     public RegionsPage goToRegions() {
-        clickOnElement(By.linkText("Regions"));
+        clickOnElement(By.xpath("//*[@id=\"app-navbar-collapse\"]/ul[1]/li[4]/a"));
         return PageFactory.initElements(getDriver(), RegionsPage.class);
     }
 

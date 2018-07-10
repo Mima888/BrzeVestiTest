@@ -11,7 +11,7 @@ import pages.DashboardPage;
 import pages.LoginPage;
 import pages.PortalsPage;
 
-public class TestPortals {
+public class TestPortals extends DashboardPage {
 
     private static LoginPage loginPage;
     private static DashboardPage dashboardPage;
@@ -19,23 +19,23 @@ public class TestPortals {
 
     @BeforeClass
     public static void setUpClass() throws IOException {
-        Configuration.init();
-        loginPage = new LoginPage();
-        dashboardPage = loginPage.login();
+//        Configuration.init();
+//        loginPage = new LoginPage();
+//        dashboardPage = loginPage.login();
     }
 
     @AfterClass
     public static void tearDownClass() throws InterruptedException {
 
-        Thread.sleep(3000);
-        loginPage.quitDriver();
+//        Thread.sleep(3000);
+//        loginPage.quitDriver();
 
     }
 
     @Before
     public void setUp() {
 
-        portalsPage = dashboardPage.goToPortals();
+        portalsPage = this.goToPortals();
     }
 
     @After
@@ -69,7 +69,7 @@ public class TestPortals {
     @Test
     public void disablePortal() {
 
-        portalsPage.disableFirstPortal();
+//        portalsPage.disableFirstPortal();
 //        portalsPage.disableLastPortal();
 //        portalsPage.disableRandomPortal();
 
@@ -78,7 +78,7 @@ public class TestPortals {
     @Test
     public void enablePortal() {
 
-        portalsPage.enableFirstPortal();
+//        portalsPage.enableFirstPortal();
 //        portalsPage.enableLastPortal();
     }
 }

@@ -26,8 +26,8 @@ public class TestCategories {
 
     @AfterClass
     public static void tearDownClass() throws InterruptedException {
-        Thread.sleep(3000);
-        loginPage.quitDriver();
+//        Thread.sleep(3000);
+//        loginPage.quitDriver();
     }
 
     @Before
@@ -63,7 +63,7 @@ public class TestCategories {
     @Test
     public void disableCategory() {
 
-        categoriesPage.disableFirstCategory();
+//        categoriesPage.disableFirstCategory();
 //       categoriesPage.disableLastCategory();
 //       categoriesPage.disableRandomCategory();
     }
@@ -71,7 +71,7 @@ public class TestCategories {
     @Test
     public void enableCategory() {
 
-        categoriesPage.enableFirstCategory();
+//        categoriesPage.enableFirstCategory();
 //        categoriesPage.enableLastCategory();
     }
 }
