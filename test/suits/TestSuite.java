@@ -10,10 +10,6 @@ import org.junit.runners.Suite;
 import portals.TestPortals;
 import regions.TestRegions;
 
-/**
- *
- * @author mica
- */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({TestCategories.class, TestRegions.class, TestPortals.class})
 public class TestSuite {
